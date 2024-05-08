@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --maincolor:  rgb(0, 157, 255);
+}
+
+/* home start */
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/trees-bg.png');
+    background-size: cover;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    height: 12.5vh;
+    align-items: center;
+}
+.menu-item{
+    list-style-type: none;
+}
+.menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    transition: 0.4s;
+}
+.links{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+.menu-link:hover{
+    color: var(--maincolor);
+}
+.center{
+    color: white;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center p{
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    text-transform: capitalize;
+    font-size: 38px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.center h2::before{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color:var(--maincolor);
+}
+.btn{
+    color:  var(--maincolor);
+    padding: 10px 20px;
+    font-size: 23px;
+    margin-top: 20px;
+    border: 3px solid  var(--maincolor);
+    border-radius: 8px;
+    background-color: transparent;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5vh;
+}
+.box{
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.box:nth-child(1){
+    background-color: var(--maincolor);
+}
+/* home end */
+
+
+
+/* Story start */
+#story{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    width: 950px;
+}
+.wrapper img{
+    margin-right: 75px;
+}
+
+.story_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 75vh;
+    background-image: url("./img/story-bg.png");
+}
+.fa-regular{
+    color: white;
+    font-size: 100px;
+}
+.story_2 h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+/* Story end */
